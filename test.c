@@ -1,6 +1,9 @@
-int moke_some_test(int a, int b)
+#include "test.h"
+
+unsigned short var_example;
+
+int some_fn(int a, int b)
 {
-    // do some stuff
     a = a + b;
     b++;
     int *ptr = &a;
