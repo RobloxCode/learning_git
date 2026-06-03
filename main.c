@@ -3,6 +3,15 @@
 #include <stdio.h>
 
 // some comment
+typedef struct {
+    size_t len;
+    size_t cap;
+    size_t *items;
+} floatArr;
+
+floatArr *fa_init(size_t cap);
+void fa_deinit(floatArr **fa);
+void fa_println(floatArr *fa);
 
 typedef struct {
     unsigned long int len;
