@@ -2,6 +2,8 @@
 
 #include <stdio.h>
 
+// some comment
+
 typedef struct {
     unsigned long int len;
     unsigned long int cap;
