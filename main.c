@@ -2,7 +2,6 @@
 
 #include <stdio.h>
 
-// some comment
 typedef struct {
     size_t len;
     size_t cap;
@@ -12,11 +11,15 @@ typedef struct {
 floatArr *fa_init(size_t cap);
 void fa_deinit(floatArr **fa);
 void fa_println(floatArr *fa);
+
+typedef struct {
+    size_t len;
+    size_t cap;
     double *items;
 } doubleArr;
 
 doubleArr *da_init(size_t cap);
-void da_deinit(doubelArr **da);
+void da_deinit(doubleArr **da);
 void da_println(doubleArr *da);
 
 typedef struct {
