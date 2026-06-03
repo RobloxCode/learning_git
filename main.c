@@ -14,8 +14,8 @@ void da_deinit(doubelArr **da);
 void da_println(doubleArr *da);
 
 typedef struct {
-    unsigned long int len;
-    unsigned long int cap;
+    size_t len;
+    size_t cap;
     int arr[];
 } intArr;
 
